@@ -1,0 +1,27 @@
+/* eslint-disable react/prop-types */
+import React from "react";
+
+import { DataSourceSelector } from "metabase/query_builder/components/DataSelector";
+
+export default function QuestionDataSelector({
+  query,
+  updateQuestion,
+  triggerElement,
+}) {
+  return (
+    <DataSourceSelector
+      containerClassName="DataPopoverContainer"
+      hasTableSearch
+      databaseQuery={{ saved: true }}
+      selectedDatabaseId={query.databaseId()}
+      selectedTableId={query.tableId()}
+      setSourceTableFn={tableId =>
+        updateQuestion(query.setTableId(tableId).setDefaultQuery().question(), {
+          run: true,
+        })
+      }
+      triggerElement={triggerElement}
+      isOpen
+    />
+  );
+}
