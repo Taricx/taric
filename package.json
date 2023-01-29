@@ -1,9 +1,9 @@
 {
-  "name": "metabase",
+  "name": "taric",
   "private": true,
   "version": "0.0.0",
-  "description": "Metabase Analytics Report Server",
-  "repository": "https://github.com/metabase/metabase",
+  "description": "Taric Analytics Report Server",
+  "repository": "https://github.com/Taricx/taric",
   "license": "private",
   "engines": {
     "node": ">=14.2",
