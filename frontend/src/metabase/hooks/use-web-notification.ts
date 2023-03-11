@@ -7,8 +7,7 @@ export function useWebNotification() {
     if (!hasNotificationAPI) {
       return "denied";
     }
-    const permission = await Notification.requestPermission();
-    return permission;
+    return await Notification.requestPermission();
   }, []);
 
   const showNotification = useCallback((title: string, body: string) => {
@@ -18,7 +17,7 @@ export function useWebNotification() {
 
     const notification = new Notification(title, {
       body,
-      icon: "app/assets/img/favicon-32x32.png",
+      icon: "app/assets/img/favicon.png",
     });
 
     const closeNotification = (e: Event) => {

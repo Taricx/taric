@@ -221,7 +221,7 @@ class SettingsSlackForm extends Component {
       <form noValidate>
         <div className="px2" style={{ maxWidth: "585px" }}>
           <h1>
-            {t`Metabase`}
+            {t`Taric`}
             <img
               width="79px"
               className="mx1"

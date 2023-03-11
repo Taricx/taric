@@ -5,9 +5,10 @@ export const LighthouseImage = styled.div`
   width: 100px;
   height: 90px;
   margin: 0.625rem 1.125rem;
-  filter: hue-rotate(${() => hueRotate("brand")}deg);
-  background-image: url("app/img/bridge.svg");
-  background-size: 26rem auto;
-  background-repeat: no-repeat;
-  background-position: 37.5% 50%;
+  background: #fff;
+  // filter: hue-rotate(${() => hueRotate("brand")}deg);
+  // background-image: url("app/img/bridge.svg");
+  // background-size: 26rem auto;
+  // background-repeat: no-repeat;
+  // background-position: 37.5% 50%;
 `;

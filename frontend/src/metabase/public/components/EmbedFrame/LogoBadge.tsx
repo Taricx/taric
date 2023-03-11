@@ -6,11 +6,11 @@ import { MetabaseLink, MetabaseName, Message } from "./LogoBadge.styled";
 function LogoBadge({ dark }: { dark: boolean }) {
   const Metabase = (
     <MetabaseName key="metabase" isDark={dark}>
-      {t`Metabase`}
+      {t`Taric`}
     </MetabaseName>
   );
   return (
-    <MetabaseLink href="https://metabase.com/" target="_blank">
+    <MetabaseLink href="https://ciusji.gitbook.io/taric/" target="_blank">
       <LogoIcon height={28} dark={dark} />
       <Message>{jt`Powered by ${Metabase}`}</Message>
     </MetabaseLink>

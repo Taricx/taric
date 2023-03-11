@@ -75,7 +75,7 @@ function ProfileLink({ user, adminItems, onLogout }) {
         event: `Navbar;Profile Dropdown;About ${tag}`,
       },
       {
-        title: t`About Metabase`,
+        title: t`About Taric`,
         icon: null,
         action: () => openModal("about"),
         event: `Navbar;Profile Dropdown;About ${tag}`,
@@ -98,7 +98,7 @@ function ProfileLink({ user, adminItems, onLogout }) {
 
   const { tag, date, ...versionExtra } = MetabaseSettings.get("version");
   // don't show trademark if application name is whitelabeled
-  const showTrademark = t`Metabase` === "Metabase";
+  const showTrademark = t`Taric` === "Taric";
   return (
     <div>
       <EntityMenu
@@ -122,7 +122,7 @@ function ProfileLink({ user, adminItems, onLogout }) {
             <h2
               style={{ fontSize: "1.75em" }}
               className="text-dark"
-            >{t`Thanks for using Metabase!`}</h2>
+            >{t`Thanks for using Taric!`}</h2>
             <div className="pt2">
               <h3 className="text-dark mb1">
                 {t`You're on version`} {tag}
@@ -147,8 +147,8 @@ function ProfileLink({ user, adminItems, onLogout }) {
               className="p2 h5 text-centered text-medium border-top"
             >
               <span className="block">
-                <span className="text-bold">Metabase</span>{" "}
-                {t`is a Trademark of`} Metabase, Inc
+                <span className="text-bold">Taric</span> {t`is a Trademark of`}{" "}
+                Taric x GuinsooLab
               </span>
               <span>{t`and is built with care by a team from all across this pale blue dot.`}</span>
             </div>

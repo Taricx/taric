@@ -38,7 +38,7 @@ const HomeXraySection = ({
     <div>
       {isSample ? (
         <HomeCaption primary>
-          {t`Try out these sample x-rays to see what Metabase can do.`}
+          {t`Try out these sample x-rays to see what Taric can do.`}
         </HomeCaption>
       ) : canSelectSchema ? (
         <HomeCaption primary>

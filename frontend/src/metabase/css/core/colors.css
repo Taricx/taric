@@ -2,25 +2,25 @@
  * NOTE: KEEP SYNCRONIZED WITH COLORS.JS
  */
 :root {
-  --color-brand: #509ee3;
-  --color-brand-light: #ddecfa;
-  --color-admin-navbar: #7172ad;
+  --color-brand: #346ddb;
+  --color-brand-light: #91b0f0;
+  --color-admin-navbar: #2662d7;
   --color-white: #ffffff;
-  --color-black: #2e353b;
-  --color-success: #84bb4c;
-  --color-error: #ed6e6e;
-  --color-warning: #f9cf48;
-  --color-text-dark: #4c5773;
+  --color-black: #242a31;
+  --color-success: #008847;
+  --color-error: #d33d3d;
+  --color-warning: #b95e04;
+  --color-text-dark: #242a31;
   --color-text-medium: #949aab;
   --color-text-light: #b8bbc3;
   --color-text-white: #ffffff;
-  --color-bg-black: #2e353b;
+  --color-bg-black: #242a31;
   --color-bg-dark: #93a1ab;
   --color-bg-medium: #edf2f5;
   --color-bg-light: #f9fbfc;
   --color-bg-white: #ffffff;
   --color-bg-yellow: #fffcf2;
-  --color-focus: #cbe2f7;
+  --color-focus: #0049d7;
   --color-shadow: rgba(0, 0, 0, 0.13);
   --color-border: #eeecec;
 }

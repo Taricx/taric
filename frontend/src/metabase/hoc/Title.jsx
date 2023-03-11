@@ -7,12 +7,14 @@ const componentStack = [];
 const SEPARATOR = " · ";
 
 const updateDocumentTitle = _.debounce(() => {
-  document.title = componentStack
+  const titles = componentStack
     .sort((a, b) => (a._titleIndex || 0) - (b._titleIndex || 0))
     .map(component => component._documentTitle)
     .filter(title => title)
-    .reverse()
-    .join(SEPARATOR);
+    .reverse();
+  titles.pop();
+  titles.push("Taric");
+  document.title = titles.join(SEPARATOR);
 });
 
 const title = documentTitleOrGetter => ComposedComponent =>
