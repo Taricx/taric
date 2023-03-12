@@ -131,7 +131,7 @@
   font-size: 0.8em;
   font-weight: 700;
   color: var(--color-text-medium);
-  border-bottom: 2px solid transparent;
+  border-bottom: 1px solid transparent;
 }
 
 .PopoverHeader-item.selected {

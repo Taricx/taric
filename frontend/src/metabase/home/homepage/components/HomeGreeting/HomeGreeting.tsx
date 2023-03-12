@@ -1,13 +1,8 @@
 import React, { useMemo } from "react";
 import _ from "underscore";
 import { t } from "ttag";
-import Tooltip from "metabase/core/components/Tooltip";
 import { User } from "metabase-types/api";
-import {
-  GreetingLogo,
-  GreetingMessage,
-  GreetingRoot,
-} from "./HomeGreeting.styled";
+import { GreetingRoot } from "./HomeGreeting.styled";
 
 export interface HomeGreetingProps {
   user: User;
@@ -22,15 +17,15 @@ const HomeGreeting = ({
 
   return (
     <GreetingRoot>
-      {showLogo && (
-        <Tooltip
-          tooltip={t`Don't tell anyone, but you're my favorite.`}
-          placement="bottom"
-        >
-          <GreetingLogo />
-        </Tooltip>
-      )}
-      <GreetingMessage showLogo={showLogo}>{message}</GreetingMessage>
+      {/*{message && showLogo && (*/}
+      {/*  <Tooltip*/}
+      {/*    tooltip={t`Don't tell anyone, but you're my favorite.`}*/}
+      {/*    placement="bottom"*/}
+      {/*  >*/}
+      {/*    <GreetingLogo />*/}
+      {/*  </Tooltip>*/}
+      {/*)}*/}
+      {/*<GreetingMessage showLogo={showLogo}>{message}</GreetingMessage>*/}
     </GreetingRoot>
   );
 };

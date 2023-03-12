@@ -31,7 +31,7 @@ export const HueContainer = styled.div`
 `;
 
 export const ControlsPointer = styled.div`
-  border: 2px solid ${color("white")};
+  border: 1px solid ${color("white")};
   border-radius: 50%;
   pointer-events: none;
 `;

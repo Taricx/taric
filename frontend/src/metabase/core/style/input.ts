@@ -49,7 +49,7 @@ export const numericInputReset = () => css`
 
 export const focusOutlineStyle = (color: string) => css`
   &:focus {
-    outline: 2px solid ${getFocusColor(color)};
+    outline: 1px solid ${getFocusColor(color)};
   }
 
   &:focus:not(:focus-visible) {

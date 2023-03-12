@@ -1,5 +1,5 @@
 .react-sortable-hoc-helper.sorting {
-  border-bottom: 2px solid var(--color-brand);
+  border-bottom: 1px solid var(--color-brand);
 }
 
 .react-sortable-hoc-helper.sorting .Icon-grabber2 {

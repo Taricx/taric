@@ -16,7 +16,8 @@ export const AppContentContainer = styled.div<{
   overflow: hidden;
   background-color: ${props =>
     color(props.isAdminApp ? "bg-white" : "content")};
-
+  padding-left: ${props => (props.isAdminApp ? 0 : "60px")};
+  // border-left: ${props => (props.isAdminApp ? null : "1px solid #eeecec")};
   @media print {
     height: 100%;
     overflow: visible !important;

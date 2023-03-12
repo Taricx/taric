@@ -242,11 +242,11 @@ class MetabaseSettings {
   }
 
   storeUrl(path = "") {
-    return `https://store.metabase.com/${path}`;
+    return `https://ciusji.gitbook.io/taric/${path}`;
   }
 
   upgradeUrl() {
-    return "https://www.metabase.com/upgrade/";
+    return "https://github.com/Taricx";
   }
 
   migrateToCloudGuideUrl() {

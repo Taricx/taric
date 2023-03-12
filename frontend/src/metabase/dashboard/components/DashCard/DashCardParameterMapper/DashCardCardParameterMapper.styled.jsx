@@ -72,7 +72,7 @@ export const TargetButton = styled.div`
   text-weight: bold;
   cursor: pointer;
   font-size: 1.2em;
-  border: 2px solid ${color("brand")};
+  border: 1px solid ${color("brand")};
   border-radius: 8px;
   min-height: 30px;
   min-width: 100px;

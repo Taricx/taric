@@ -70,7 +70,7 @@ export const EditorContainer = styled.div`
 
   .ace_content .error {
     position: absolute;
-    border-bottom: 2px solid ${color("error")};
+    border-bottom: 1px solid ${color("error")};
     border-radius: 0px;
     background-color: ${color("bg-error")};
   }

@@ -17,7 +17,7 @@
    {:font-size :12px
     :font-weight     700
     :color           style/color-text-dark
-    :border-bottom   (str "2px solid " style/color-border)
+    :border-bottom   (str "1px solid " style/color-border)
     :border-right    0}))
 
 (def ^:private max-bar-width 106)

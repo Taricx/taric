@@ -14,7 +14,7 @@ export const LayoutBody = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 1.5rem 1rem 3rem;
+  padding-right: 1.5rem 60px 3rem 0;
   min-height: 100vh;
 `;
 
@@ -38,7 +38,6 @@ export const LayoutIllustration = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background: #fff;
   // filter: hue-rotate(${hueRotate("brand")}deg);
   // background-image: url("app/img/bridge.svg");
   // background-size: max(2592px, 100%) auto;
