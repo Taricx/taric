@@ -7,7 +7,7 @@ const HomeHelpCard = (): JSX.Element => {
   return (
     <CardRoot href={MetabaseSettings.learnUrl()}>
       <CardIcon name="reference" />
-      <CardTitle>{t`Metabase tips`}</CardTitle>
+      <CardTitle>{t`Taric tips`}</CardTitle>
     </CardRoot>
   );
 };

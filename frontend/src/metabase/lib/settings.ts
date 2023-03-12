@@ -242,7 +242,7 @@ class MetabaseSettings {
   }
 
   storeUrl(path = "") {
-    return `https://store.metabase.com/${path}`;
+    return `https://ciusji.gitbook.io/taric/${path}`;
   }
 
   upgradeUrl() {

@@ -119,9 +119,8 @@ const NavLi = styled.li`
   align-items: center;
   justify-content: center;
   &:hover {
-    border-radius: 0;
-    border-left: 2px solid;
-    padding-right: 2px;
+    border-radius: 4px;
+    padding: 8px;
     background-color: ${alpha("brand", 0)};
     color: ${color("brand")};
   }
