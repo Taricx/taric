@@ -28,7 +28,9 @@ import StatusListing from "metabase/status/containers/StatusListing";
 import { ContentViewportContext } from "metabase/core/context/ContentViewportContext";
 import { AppErrorDescriptor, State } from "metabase-types/store";
 import { AppContainer, AppContent, AppContentContainer } from "./App.styled";
-import { colors } from "./lib/colors";
+import { alpha, color, colors } from "./lib/colors";
+import LogoIcon from "./components/LogoIcon";
+import { SidebarIcon } from "./nav/components/AppBar/AppBarToggle.styled";
 
 const getErrorComponent = ({ status, data, context }: AppErrorDescriptor) => {
   if (status === 403 || data?.error_code === "unauthorized") {
@@ -104,6 +106,60 @@ const MainNavRoot = styled.div`
   border-right: 1px solid #eeecec;
 `;
 
+const NavUl = styled.ul`
+  color: ${colors.white};
+  display: flex;
+  flex-direction: column;
+`;
+
+const NavLi = styled.li`
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    border-radius: 0;
+    border-left: 2px solid;
+    padding-right: 2px;
+    background-color: ${alpha("brand", 0)};
+    color: ${color("brand")};
+  }
+`;
+
+function MainAppNavs() {
+  return (
+    <MainNavRoot>
+      <NavUl>
+        <NavLi>
+          <LogoIcon dark height={32} />
+        </NavLi>
+        <NavLi>
+          <SidebarIcon
+            name="home"
+            width={20}
+            onClick={() => window.open("/", "_self")}
+          />
+        </NavLi>
+        <NavLi>
+          <SidebarIcon
+            name="folder"
+            width={20}
+            onClick={() => window.open("/collection/root", "_self")}
+          />
+        </NavLi>
+        <NavLi>
+          <SidebarIcon
+            name="database"
+            width={20}
+            onClick={() => window.open("/browse", "_self")}
+          />
+        </NavLi>
+      </NavUl>
+    </MainNavRoot>
+  );
+}
+
 function App({
   errorPage,
   isAdminApp,
@@ -122,7 +178,7 @@ function App({
     <ErrorBoundary onError={onError}>
       <ScrollToTop>
         <AppContainer className="spread">
-          {isAppBarVisible && <MainNavRoot />}
+          {isAppBarVisible && <MainAppNavs />}
           <AppBanner />
           {isAppBarVisible && <AppBar />}
           <AppContentContainer isAdminApp={isAdminApp}>
