@@ -11,7 +11,7 @@ export const ActionParameterTriggerContainer = styled.button`
   right: -10px;
   background: ${color("white")};
   color: ${color("brand")};
-  border: 2px solid ${color("brand")};
+  border: 1px solid ${color("brand")};
   border-radius: 50%;
   width: 22px;
   height: 22px;

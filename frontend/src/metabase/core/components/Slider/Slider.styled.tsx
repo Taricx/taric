@@ -18,7 +18,7 @@ const thumbStyles = `
   width: ${THUMB_SIZE};
   height: ${THUMB_SIZE};
   border-radius: 50%;
-  border: 2px solid ${color("brand")};
+  border: 1px solid ${color("brand")};
   box-sizing: border-box;
   background-color: ${color("white")};
   cursor: pointer;

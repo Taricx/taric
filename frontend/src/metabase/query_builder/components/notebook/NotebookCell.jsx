@@ -28,7 +28,7 @@ const NotebookCellItemContainer = styled.div`
   border-radius: 6px;
   margin-right: 4px;
 
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   border-color: ${props =>
     props.inactive ? alpha(props.color, 0.25) : "transparent"};
 

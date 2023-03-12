@@ -17,14 +17,14 @@ export const SidebarButton = styled.button<SidebarButtonProps>`
   ${({ isNavBarEnabled, isLogoVisible, isSmallAppBar }) =>
     isLogoVisible && !isSmallAppBar
       ? css`
-          opacity: ${isNavBarEnabled ? 0 : 1};
+          opacity: ${isNavBarEnabled ? 1 : 0};
 
           ${AppBarLeftContainer}:hover & {
             opacity: ${isNavBarEnabled ? 1 : 0};
           }
         `
       : css`
-          opacity: 1;
+          opacity: 0;
         `}
 `;
 

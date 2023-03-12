@@ -34,7 +34,7 @@ export const AdminNavbar = ({
       <AdminLogoLink to="/admin" data-metabase-event="Navbar;Logo">
         <AdminLogoContainer>
           <LogoIcon className="text-brand my2" dark />
-          <AdminLogoText>{t`Metabase Admin`}</AdminLogoText>
+          <AdminLogoText>{t`Taric Admin`}</AdminLogoText>
         </AdminLogoContainer>
       </AdminLogoLink>
 

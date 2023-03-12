@@ -105,7 +105,7 @@ export const ResultLinkContent = styled.div`
 export const Description = styled(Text)`
   padding-left: ${space(1)};
   margin-top: ${space(1)} !important;
-  border-left: 2px solid ${lighten("brand", 0.45)};
+  border-left: 1px solid ${lighten("brand", 0.45)};
 `;
 
 export const ContextContainer = styled.div`

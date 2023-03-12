@@ -26,7 +26,7 @@ export const StackedBackground = styled.div`
   background: ${props =>
     props.checked ? color(props.checkedColor) : color("bg-white")};
 
-  border: 2px solid
+  border: 1px solid
     ${props =>
       props.checked ? color(props.checkedColor) : color(props.uncheckedColor)};
 `;

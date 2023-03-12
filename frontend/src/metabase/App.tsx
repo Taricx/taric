@@ -1,6 +1,7 @@
 import React, { ErrorInfo, ReactNode, useState } from "react";
 import { connect } from "react-redux";
 import { Location } from "history";
+import styled from "@emotion/styled";
 
 import ScrollToTop from "metabase/hoc/ScrollToTop";
 import {
@@ -20,16 +21,14 @@ import {
 import { setErrorPage } from "metabase/redux/app";
 import { useOnMount } from "metabase/hooks/use-on-mount";
 import { initializeIframeResizer } from "metabase/lib/dom";
-
 import AppBanner from "metabase/components/AppBanner";
 import AppBar from "metabase/nav/containers/AppBar";
 import Navbar from "metabase/nav/containers/Navbar";
 import StatusListing from "metabase/status/containers/StatusListing";
 import { ContentViewportContext } from "metabase/core/context/ContentViewportContext";
-
 import { AppErrorDescriptor, State } from "metabase-types/store";
-
 import { AppContainer, AppContent, AppContentContainer } from "./App.styled";
+import { colors } from "./lib/colors";
 
 const getErrorComponent = ({ status, data, context }: AppErrorDescriptor) => {
   if (status === 403 || data?.error_code === "unauthorized") {
@@ -92,6 +91,19 @@ class ErrorBoundary extends React.Component<{
   }
 }
 
+const MainNavRoot = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  flex-direction: column;
+  justify-content: space-between;
+  background: ${colors.black};
+  width: 60px;
+  height: 100vh;
+  border-right: 1px solid #eeecec;
+`;
+
 function App({
   errorPage,
   isAdminApp,
@@ -110,6 +122,7 @@ function App({
     <ErrorBoundary onError={onError}>
       <ScrollToTop>
         <AppContainer className="spread">
+          {isAppBarVisible && <MainNavRoot />}
           <AppBanner />
           {isAppBarVisible && <AppBar />}
           <AppContentContainer isAdminApp={isAdminApp}>

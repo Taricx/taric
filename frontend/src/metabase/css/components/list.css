@@ -17,13 +17,13 @@
 
 .List-section-header {
   color: var(--color-text-dark);
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   /* so that spacing matches .List-item */
 }
 
 .List-section-header--cursor {
   border-radius: 8px;
-  outline: 2px solid var(--color-focus);
+  outline: 1px solid var(--color-focus);
   outline-offset: -4px;
 }
 
@@ -57,7 +57,7 @@
 }
 
 .List-item--cursor {
-  outline: 2px solid var(--color-focus);
+  outline: 1px solid var(--color-focus);
 }
 
 .List-item--cursor:not(.List-item--disabled),

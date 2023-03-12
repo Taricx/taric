@@ -246,7 +246,7 @@ class MetabaseSettings {
   }
 
   upgradeUrl() {
-    return "https://www.metabase.com/upgrade/";
+    return "https://github.com/Taricx";
   }
 
   migrateToCloudGuideUrl() {

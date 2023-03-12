@@ -71,7 +71,7 @@ export const RadioContainer = styled.div<RadioContainerProps>`
   }
 
   ${RadioInput}:focus + & {
-    outline: 2px solid ${() => color("focus")};
+    outline: 1px solid ${() => color("focus")};
   }
 
   ${RadioInput}:focus:not(:focus-visible) + & {
@@ -124,7 +124,7 @@ export const RadioButton = styled.span<RadioButtonProps>`
   width: 0.75rem;
   height: 0.75rem;
   margin-right: 0.5rem;
-  border: 2px solid white;
+  border: 1px solid white;
   border-radius: 0.75rem;
   box-shadow: 0 0 0 2px
     ${props =>

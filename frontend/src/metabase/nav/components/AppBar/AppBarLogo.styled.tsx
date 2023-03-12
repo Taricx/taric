@@ -22,6 +22,7 @@ export const LogoLink = styled(Link)<LogoLinkProps>`
   border-radius: 0.375rem;
   padding: 0.5rem 1rem;
   transition: opacity 0.3s;
+  opacity: 0;
 
   &:hover {
     background-color: ${color("bg-light")};

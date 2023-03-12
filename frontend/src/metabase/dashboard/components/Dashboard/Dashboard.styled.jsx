@@ -110,7 +110,7 @@ export const ParametersWidgetContainer = styled(FullWidthContainer)`
     css`
       position: fixed;
       top: ${isWithinIframe() && !topNav ? "0" : APP_BAR_HEIGHT};
-      left: 0;
+      left: 60;
       border-bottom: 1px solid ${color("border")};
     `}
 

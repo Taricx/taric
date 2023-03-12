@@ -99,7 +99,7 @@ function NewPulseSidebar({
                   </Link>
                 )}.`}
               {slackConfigured &&
-                t`Pick a channel and a schedule, and Metabase will do the rest.`}
+                t`Pick a channel and a schedule, and Taric will do the rest.`}
             </Text>
           </div>
         </ChannelCard>

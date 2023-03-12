@@ -41,5 +41,5 @@ export const DefaultParameterValueWidget = styled(ParameterValueWidget)`
   color: ${color("text-medium")};
   border-radius: 0.5rem;
   background-color: ${color("white")};
-  border: 2px solid ${color("border")};
+  border: 1px solid ${color("border")};
 `;

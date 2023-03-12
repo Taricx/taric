@@ -11,11 +11,11 @@ export const AppBarRoot = styled.div<AppBarRootProps>`
   align-items: center;
   gap: 1rem;
   height: ${APP_BAR_HEIGHT};
-  padding: 0 1rem;
-  border-bottom: 1px solid
-    ${props => (props.isNavBarOpen ? color("border") : "transparent")};
+  padding: 0 1rem 0 60px;
+  border-bottom: 1px solid #eeecec;
+  ${props => (props.isNavBarOpen ? color("border") : "transparent")};
   background-color: ${color("bg-white")};
-  transition: border-bottom-color 200ms ease;
+  // transition: border-bottom-color 200ms ease;
 `;
 
 export interface AppBarLeftContainerProps {

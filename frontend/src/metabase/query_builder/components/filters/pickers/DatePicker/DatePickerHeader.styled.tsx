@@ -24,7 +24,7 @@ export const TabButton = styled(Button)<TabButtonProps>`
   margin-left: ${space(2)};
   margin-right: ${space(2)};
   border-bottom: ${({ primaryColor = color("brand"), selected }) =>
-    selected ? `2px solid ${primaryColor}` : "2px solid transparent"};
+    selected ? `1px solid ${primaryColor}` : "1px solid transparent"};
 
   color: ${({ primaryColor = color("brand"), selected }) =>
     selected ? primaryColor : color("text-medium")};

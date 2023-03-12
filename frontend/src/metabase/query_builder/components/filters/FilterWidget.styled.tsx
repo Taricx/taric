@@ -9,7 +9,7 @@ export interface FilterWidgetRootProps {
 export const FilterWidgetRoot = styled.div<FilterWidgetRootProps>`
   display: flex;
   flex-shrink: 0;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   border-radius: 0.5rem;
 
   ${({ isSelected }) =>

@@ -30,7 +30,7 @@
   min-height: 100vh;
   width: 346px;
   background-color: var(--color-bg-light);
-  border-left: 2px solid var(--color-border);
+  border-left: 1px solid var(--color-border);
 }
 .Layout-mainColumn {
   max-width: 700px;
