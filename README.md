@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Taricx/taric/main/docs/images/taric-white.jpg" width="120" alt="logo" />
+  <img src="https://raw.githubusercontent.com/Taricx/taric/main/docs/images/taric-white.png" width="120" alt="logo" />
   <br/>
   <small>An Open-source Business Intelligence Platform</small>
 </div>
@@ -9,7 +9,7 @@
 
 Taric is the easy, open-source way for everyone in your company to ask questions and learn from data.
 
-![Product Screenshot](https://raw.githubusercontent.com/Taricx/taric/main/docs/images/product-screenshot.svg)
+![Product Screenshot](https://raw.githubusercontent.com/Taricx/taric/main/docs/images/product-screenshot.png)
 
 ## Features
 
@@ -45,12 +45,15 @@ Check out our guide, [Working with the Taric API](https://ciusji.gitbook.io/tari
 
 ## Security Disclosure
 
-See [SECURITY.md](./SECURITY.md) for details.
+See [SECURITY.md](SECURITY.md) for details.
 
 ## License
 
 This repository contains the source code for both the Open Source edition of Taric, released under the AGPL.
 
-See [LICENSE.txt](./LICENSE.txt) for details.
+See [LICENSE.txt](LICENSE.txt) for details.
 
 Unless otherwise noted, all files © 2023 Taric, Inc.
+
+<img src="https://raw.githubusercontent.com/GuinsooLab/glab/main/src/images/guinsoolab-group.svg" width="120" alt="license" />
+
